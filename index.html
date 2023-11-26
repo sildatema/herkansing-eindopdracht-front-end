@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herkansing eindopdracht front end, de kleine peterselie plukkers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!--header en nav -->
+
+<body>
+    <nav>
+        <div class="logo-link">
+            <a href="index.html"> <img class="logo" src="images/logo.jpeg" al="logo website"></a>
+        </div>
+        <div class="links-right">
+            <a href="#">intro</a>
+            <a href="#winkel">winkel</a>
+            <a href="#inschrijven">inschrijven</a>
+            <a href="#socials">socials</a>
+        </div>
+    </nav>
+    <header id="header">
+<!-- h1 voor h tag hiërarchie -->
+        <h1>
+            de kleine peterselie plukkers
+        </h1>
+
+        <p>
+            welkom bij de kpp, ookwel de kleine peterselie plukkers!<br>
+            wij zijn een groep die extreem gericht is op de natuur met een grote passie voor kruiden!<br>
+            natuurlijk zijn er erg veel verschillende soorten kruiden waar iedereen een ander gevoel over heeft.<br>
+            maar peterselie is waar onze passie ligt.<br>
+            wil je meer leren, klik dan op deze links!
+        </p>
+        <div class="buttons">
+            <a
+                href="https://www.allezadenkopen.nl/blog/veelzijdig-en-supergezond-peterselie-kweken-doe-je-zelf/">groeien</a>
+            <a href="https://makkelijkemoestuin.nl/kennisbank/recepten-met-veel-peterselie">recepten</a>
+        </div>
+    </header>
+    <!-- main sectie met onderverdeling articles-->
+    <main>
+        <section id="winkel" class="underline">
+           <!--h2 voor hiërarchie -->
+            <h2>winkel </h2>
+            <div class="cards">
+                <article class="basilicum">
+                    <!--  in de articles van h1 tot h3 , per article 1-->
+                    <div class="basilicum-picture">
+                        <img class="basilicumimg" src="images/basilicum-hoeveel-water-geven.webp"
+                            alt="basilicum picture">
+                    </div>
+
+                    <h1>
+                        basilicum
+                    </h1>
+                    <p>
+                        Rating:★★★★★
+                    </p>
+                    <p class="basilicum-text">
+                        of je er van hour of niet is persoonlijk, onze colegas in ieder geval wel! onze basilicum wordt
+                        elke dag erg hard verzorgd door onze collegas
+                        die hard aan de slag gaan zodat u op ieder moment verse basilicum heeft en kunt genieten van
+                        heerlijke recepten
+                    </p>
+                    <a href="https://nl.wikipedia.org/wiki/Basilicum_(soort)">Koop nu!</a>
+                </article>
+                <article class="tijm">
+
+                    <div class="tijm-picture">
+                        <img class="tijmimg" src="images/Tijm (10).jpeg" alt="tijm picture">
+                    </div>
+
+
+                    <h2>
+                        tijm
+                    </h2>
+                    <p>
+                        Rating:★★★★
+                    </p>
+                    <p class="tijm-text">
+                        onze vers gegroeide tijm is voor elk gerecht een must. ons team heeft zich elke dag hard
+                        ingezet om onze tijm planten in een perfectie conditie te houden om de beste smaak te kunnen
+                        garanderen
+                    </p>
+                    <a href="https://nl.wikipedia.org/wiki/Tijm">Koop nu!</a>
+                </article>
+                <article class="rozemarijn">
+
+
+                    <div class="rozemarijn-picture">
+                        <img class="rozemarijnimg" src="images/rozemarijn-hoeveel-water-geven.webp"
+                            alt="tozemarijn picture">
+                    </div>
+                    <h3>
+                        rozemarijn
+                    </h3>
+                    <p>
+                        Rating:★★★
+                    </p>
+                    <p class="rozemarijn-text">
+                        onze rozemarijn wordt elke dag verzorgd door extreem gemotiveerde medewerkers van ons en is
+                        daardoor in de beste staat!
+                        altijd versgeplukt en klaar om in de heerlijke gerechten te gaan
+                    </p>
+
+                    <a href="https://nl.wikipedia.org/wiki/Rozemarijn_(plant)">Koop nu!</a>
+                </article>
+            </div>
+        </section>
+
+        <!--section 2 -->
+        <section id="inschrijven" class="form">
+            <form>
+                <div class="textveld">
+                    <div class="text">
+                        <label for="first-name">Voornaam</label>
+                        <input type="text" id="first-name" name="firstname" placeholder="voornaam" required>
+                    </div>
+                    <div class="textveld">
+                        <div class="text">
+                            <label for="lastname">Achternaam</label>
+                            <input type="text" id="first-name" name="firstname" placeholder="Achternaam" required>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="textstuk">
+                        <label for="E-mail">E-mail:</label>
+                        <input type="email" id="E-mail" name="E-mail" placeholder="sildatema04@gmail.com" required>
+                    </div>
+                </div>
+
+                <div class="textveld">
+                    <div class="text">
+                        <label for="Woonplaats">Woonplaats</label>
+                        <input type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats" required>
+
+                    </div>
+                    <div class="text">
+                        <label for="Geboortedatum">Geboortedatum:</label>
+                        <input type="date" id="geboortedatum" name="Geboortedatum" placeholder="dd-mm-yyyy" required>
+
+                    </div>
+
+                </div>
+
+                <label for="inschrijving">verstuur naar:</label>
+                <select id="inschrijving" name="inschrijving" required class="inschrijven">
+                    <option value="kpp">inschrijving kleine peterselie plukkers</option>
+                    <option value="rfc">inschrijving rozemarijn fan club</option>
+                    <option value="beb">inschrijving basilicum en bomen knuffelaars</option>
+                    <option value="tts">inschrijving tijm en tijden studie</option>
+                </select>
+
+
+                <label for="message">Vragen?</label>
+                <textarea name="message" rows="10" cols="30"></textarea>
+
+                <h3>inschrijven voor de nieuwsbrief</h3>
+                <div class="jaennee">
+                    <div class="radio">
+                        <input type="radio" id="radio" name="radio" value="ja">
+                        <label for="ja">ja</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" id="radio" name="radio" value="nee">
+                        <label for="nee">nee</label>
+                    </div>
+                </div>
+                <div class="checkbox">
+
+                    <input type="checkbox" id="voorwaarden" naam="voorwaarden" value="voorwaarden">
+                    <label for="voorwaarden">ik ga akoord met de algemene voorwaarden</label>
+
+                </div>
+
+                <button type="submit">verzenden</button>
+            </form>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <!--footer -->
+
+    <footer id="socials">
+
+
+        <div class="footer-logo">
+            <a href="index.html"> <img class="logo" src="images/logo.jpeg" al="logo website"></a>
+            <div class="copyright">copyright 2023 sildatema.com</div>
+                <div class="socials">
+                    <a href="https://www.instagram.com"><img class="insta" src="images/insta.jpeg"
+                            al="instagram logo"></a>
+                    <a href="https://www.snapchat.com"><img class="snapchat" src="images/Snapchat.jpg"
+                            al="snapchat logo"></a>
+                    <a href="https://www.facebook.com"><img class="facebook" src="images/facebook.jpeg"
+                            al="facebook logo"></a>
+                </div>
+            </div>
+
+
+
+            <div class="linksfooter">
+                <a href="#">privacy verklaring</a>
+                <a href="#">algemene voorwaarden</a>
+                <a href="#">coockiebeleid</a>
+                <a href="#inschrijven">inschrijven</a>
+
+            </div>
+    </footer>
+
+
+</body>
+
+</html>
